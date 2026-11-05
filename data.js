@@ -322,7 +322,7 @@ const MODULE_DATA = {
             { id: 'ant', location: 'Connector Antena', label: 'GPS 2', bg: 'BLACK', text: 'TEXT_LIGHT' },
             { id: 'spare', location: 'Gulungan Spare Optik', label: 'GPS 1', bg: 'BLACK', text: 'TEXT_LIGHT' },
             { id: 'hole', location: 'Hole Lubang Cabinet Belakang', label: 'GPS 1', bg: 'BLACK', text: 'TEXT_LIGHT' },
-            { id: 'bbu', location: 'Connector BBU', label: 'Sync', bg: 'RED', text: 'BLACK' }
+            { id: 'bbu', location: 'Connector BBU', label: 'Sync 1 NR2600', bg: 'RED', text: 'BLACK' }
         ]
     }
 };
