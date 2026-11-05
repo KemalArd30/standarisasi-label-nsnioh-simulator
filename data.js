@@ -233,9 +233,9 @@ const MODULE_DATA = {
         }
     },
 
-    // 6. AKHD (2300 MHz / TDD)
+    // 6. AKHD (2600 MHz / TDD)
     AKHD: {
-        name: 'AKHD (2300 MHz / TDD)',
+        name: 'AKHD (2600 MHz / TDD)',
         type: 'RRH',
         hasJumper: true,
         jumperToggles: [
