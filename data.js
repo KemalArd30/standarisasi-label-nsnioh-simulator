@@ -145,13 +145,13 @@ const MODULE_DATA = {
 
     // 4. AHEGC / AHEGG / AHEGH (1800+2100 MHz)
     AHEGG: {
-        name: 'AHEGC / AHEGG / AHEGH (1800+2100)',
+        name: 'AHEGC / AHEGG / AHEGH (1800+2100 MHz)',
         type: 'RRH',
         hasJumper: true,
         jumperToggles: [
             { id: 'NORMAL', label: 'Mode Normal' },
-            { id: 'HOS_M1', label: 'HOS (Modul Utama)' },
-            { id: 'HOS_M2', label: 'HOS (Modul Kedua)' }
+            { id: 'HOS_M1', label: 'HOS #1' },
+            { id: 'HOS_M2', label: 'HOS #2' }
         ],
         jumperRules: {
             'NORMAL': [
@@ -259,9 +259,9 @@ const MODULE_DATA = {
         dc: {
             hideSector: true,
             cables: [
-                { strips: ['GOLD:1'], moduleLabel: 'AKHD', labelBottom: 'Sector 1' },
-                { strips: ['GOLD:2'], moduleLabel: 'AKHD', labelBottom: 'Sector 2' },
-                { strips: ['GOLD:3'], moduleLabel: 'AKHD', labelBottom: 'Sector 3' }
+                { strips: ['GOLD:1'], moduleLabel: 'AKHD #1', labelBottom: 'Power #1' },
+                { strips: ['GOLD:2'], moduleLabel: 'AKHD #2', labelBottom: 'Power #1' },
+                { strips: ['GOLD:3'], moduleLabel: 'AKHD #3', labelBottom: 'Power #1' }
             ]
         },
         foToggles: [
@@ -320,7 +320,7 @@ const MODULE_DATA = {
         type: 'GPS',
         segments: [
             { id: 'ant', location: 'Connector Antena', label: 'GPS 2', bg: 'BLACK', text: 'TEXT_LIGHT' },
-            { id: 'spare', location: 'Gulungan Spare Optik', label: 'GPS 1', bg: 'BLACK', text: 'TEXT_LIGHT' },
+            { id: 'spare', location: 'Gulungan Spare Optic', label: 'GPS 1', bg: 'BLACK', text: 'TEXT_LIGHT' },
             { id: 'hole', location: 'Hole Lubang Cabinet Belakang', label: 'GPS 1', bg: 'BLACK', text: 'TEXT_LIGHT' },
             { id: 'bbu', location: 'Connector BBU', label: 'Sync 1 NR2600', bg: 'RED', text: 'BLACK' }
         ]

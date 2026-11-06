@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulator ATP | NSN IOH</title>
+    <title>Simulator Labelling NSN-IOH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load file CSS kustom -->
     <link rel="stylesheet" href="style.css">
@@ -19,8 +19,9 @@
         <aside class="w-full md:w-[380px] lg:w-[420px] flex flex-col shrink-0 bg-[#131b26] border-b md:border-b-0 md:border-r border-slate-800 z-20 md:h-screen md:overflow-y-auto custom-scrollbar">
             <!-- Header -->
             <header class="p-4 border-b border-slate-800 sticky top-0 bg-[#131b26] z-30">
-                <h1 class="text-lg font-bold leading-tight text-white">Simulator Label ATP</h1>
-                <p class="text-[11px] text-slate-400 mt-1 uppercase tracking-wider font-semibold">Standarisasi NSN - IOH</p>
+                <h1 class="text-lg font-bold leading-tight text-white">Simulator Labelling</h1>
+                <p class="text-[11px] text-slate-400 mt-1 uppercase tracking-wider font-semibold">Standarisasi NSN - IOH | INTISEL</p>
+                <p class="text-[9px] text-slate-100 italic mt-1 uppercase tracking-wider font-semibold">MDR v1.10</p>
             </header>
 
             <!-- Workspace Kontrol -->
@@ -28,13 +29,13 @@
                 
                 <!-- 1A. Pilih Modul (Versi HP: Dropdown Klasik) -->
                 <div class="flex flex-col gap-1.5 md:hidden">
-                    <label for="module-select" class="text-sm font-bold text-slate-400">Pilih Modul / Unit</label>
+                    <label for="module-select" class="text-sm font-bold text-slate-400">Pilih RRU / RF Modul</label>
                     <select id="module-select" class="p-3 border border-slate-700 rounded-lg bg-slate-800 text-white focus:ring-2 focus:ring-amber-500 focus:outline-none font-medium">
                         <option value="" disabled selected>-- Pilih Perangkat --</option>
                         <option value="FXDD">FXDD / ARDA / ARDB (900 MHz)</option>
                         <option value="AHPDC">AHPDC (700 + 900 MHz)</option>
                         <option value="FXED">FXED / AREA / AREC (1800 MHz)</option>
-                        <option value="AHEGG">AHEGC / AHEGG / AHEGH (1800+2100)</option>
+                        <option value="AHEGG">AHEGC / AHEGG / AHEGH (1800+2100 MHz)</option>
                         <option value="FRGU">FRGU / ARGA (2100 MHz)</option>
                         <option value="AKHD">AKHD (2300 MHz / TDD)</option>
                         <option value="AVHA">AVHA (AAU - 2600 MHz)</option>
@@ -59,7 +60,7 @@
                 <div id="main-tabs" class="hidden flex border-b border-slate-800 mt-1">
                     <button class="tab-btn flex-1 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent transition-colors hover:text-slate-300" data-tab="jumper">Jumper RF</button>
                     <button class="tab-btn flex-1 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent transition-colors hover:text-slate-300" data-tab="dc">Power DC</button>
-                    <button class="tab-btn flex-1 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent transition-colors hover:text-slate-300" data-tab="fo">Fiber Optik</button>
+                    <button class="tab-btn flex-1 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent transition-colors hover:text-slate-300" data-tab="fo">Fiber Optic</button>
                 </div>
 
                 <!-- 4. Pilihan Sektor -->
@@ -81,7 +82,7 @@
         <main class="flex-1 flex flex-col min-h-[500px] md:h-screen bg-[#0a0d14] relative overflow-hidden">
             <!-- Header Kanvas -->
             <div id="canvas-header" class="text-center text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] py-4 bg-[#0a0d14]/90 backdrop-blur sticky top-0 z-10 hidden border-b border-slate-800/50">
-                Setiap Ujung Konektor (Atas)
+                Setiap Ujung Konektor
             </div>
             
             <!-- Area Render Kabel -->
@@ -89,7 +90,7 @@
                 <div id="render-area" class="w-full min-h-full flex justify-center items-center transition-all duration-300">
                     <div id="placeholder-text" class="text-slate-600 text-sm text-center max-w-sm p-8 border border-dashed border-slate-800 rounded-2xl">
                         <span class="block text-3xl mb-3 opacity-50">⚡</span>
-                        Pilih RRU / RF Modul untuk merender panduan lilitan label kabel.
+                        Pilih RRU / RF Modul untuk melihat panduan labelling kabel.
                     </div>
                 </div>
             </div>
